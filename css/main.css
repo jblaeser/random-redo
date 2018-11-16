@@ -317,7 +317,7 @@ img {
     background: #000;
     color: #fff;
     padding: 1em;
-    z-index: 1;
+    z-index: 10;
 }
 
 h1 {
@@ -346,6 +346,8 @@ h1 {
 .bgimage {
     z-index: -10;
     width: 100%;
+    position: relative;
+    display: block;
 }
 
 h2 {
@@ -363,7 +365,7 @@ h2 {
 }
 
 .imglink {
-    margin: 1em;
+    margin: 2em;
     display: block;
     border: .25em solid #fff;
     padding: 1em;
