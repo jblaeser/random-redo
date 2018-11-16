@@ -292,6 +292,7 @@ textarea {
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -397,15 +398,13 @@ h3 {
 
 /* Work */
 
-.row {
-    display: flex;
-    justify-content: space-between;
-    margin: .5em 0;
-}
 
 .workimg {
-    flex-basis: 49.5%;
+    width: 50%;
+    float: left;
     position: relative;
+    z-index: -10;
+    border: 1px solid white;
 }
 
 .projectimg {
@@ -439,6 +438,7 @@ h4 {
 /* Footer */
 
 footer {
+    clear: both;
     text-align: center;
     padding: 1em;
     font-size: 1.1em;
