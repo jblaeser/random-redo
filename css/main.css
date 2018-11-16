@@ -343,40 +343,38 @@ h1 {
     padding: 2em 0 0 0;
 }
 
+.bgimage {
+    z-index: -10;
+    width: 100%;
+}
 
 h2 {
     font-size: 4em;
     line-height: 1em;
     text-align: center;
+}
+
+.imgsectioncontent {
     position: absolute;
+    z-index: 1;
     left: 50%;
     top: 50%;
-    -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
 
-
 .imglink {
-    position: absolute;
-    left: 50%;
-    top: 75%;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
+    margin: 1em;
+    display: block;
     border: .25em solid #fff;
     padding: 1em;
-}
-
-.imglink a {
     color: #fff;
     font-size: 1.8em;
+    text-align: center;
     text-decoration: none;
 }
 
 .imglink:hover {
     background-color: #fff;
-}
-
-.imglink:hover a {
     color: #000;
 }
 
