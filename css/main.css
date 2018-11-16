@@ -304,6 +304,10 @@ section {
     border-bottom: .125em solid #eee;
 }
 
+img {
+    max-width: 100%;
+}
+
 
 /* Nav */
 
@@ -312,8 +316,6 @@ section {
     width: 100%;
     background: #000;
     color: #fff;
-    display: flex;
-    justify-content: space-between;
     padding: 1em;
     z-index: 1;
 }
@@ -321,16 +323,16 @@ section {
 h1 {
     margin: 0;
     padding: 0;
-    flex-basis: 70%;
     font-size: 1.5em;
 }
 
 .menuicon {
     font-size: 1.5em;
     flex-basis: 10%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    position: absolute;
+    top: 50%;
+    right: 2.5em;
+    transform: translateY(-50%);
 }
 
 /* Image Sections */
@@ -341,9 +343,6 @@ h1 {
     padding: 2em 0 0 0;
 }
 
-.bgimage {
-    width: 100%;
-}
 
 h2 {
     font-size: 4em;
